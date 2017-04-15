@@ -5,7 +5,25 @@
  * @return {string} reversed
  * ie: "cat" => "tac"
  */
+function firstReverse(str){
+	if(typeOf !== 'string'){
+		return null;
+	}
+	var strToArr = str.split('');
+	var revArr = strToArr.reverse();
+	var arrToStr = revArr.join('');
 
+	return arrToStr;
+}
+
+
+/*
+function firstReverse(str){
+var reverseStr = '';
+for (var i= str.length -1; i>=0; i--){
+	reverseSt+= str[i];
+	}
+*/
  /** Function: alphaOrder
  * The function will take the str parameter being passed in and
  * return the string in alphabetical order
@@ -13,7 +31,15 @@
  * @return {string} in alphabetical order
  * ie: "cake" => "acek"
  */
+function alphaOrder(str){
+	if(typeOf !== 'string'){
+		return null;
+	}
+	var putInOrder = str.split('');
+	putInOrder.sort().join('');
+	return putInOrder;
 
+}
  /** Function: vowelCount
  * The function will take the str parameter being passed in and
  * return the number of vowels in the string
